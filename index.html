@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief para Diseño de Tarjeta de Presentación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <!-- Tech Grip + Dark Gradient -->
+        <div class="tech-grid-overlay"></div>
+        <div class="glow-orb top-center"></div>
+    </div>
+
+    <!-- Navigation (Simplified for Brief) -->
+    <nav class="glass-nav">
+        <div class="logo">BRIEF<span class="dot">.</span></div>
+    </nav>
+
+    <main>
+        <!-- Form Header -->
+        <section id="hero" class="hero-section center-layout">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="pill-badge">Estrategia + Diseño</span>
+                </div>
+                <h1 class="hero-title">Brief de <br><span class="gradient-text">Diseño</span></h1>
+                <h2 class="subtitle">Tarjeta de <span class="white-text">Presentación</span></h2>
+                <p class="hero-desc">
+                    Este formulario me ayudará a conocer tu marca y tus necesidades para diseñar tu tarjeta de
+                    presentación de forma estratégica, clara y alineada a tu identidad.
+                </p>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <form action="#" method="POST" class="brief-form">
+
+            <!-- SECCIÓN 1: INFORMACIÓN GENERAL -->
+            <section class="form-section">
+                <div class="section-header center">
+                    <h3>SECCIÓN 1</h3>
+                    <h2>Información <span class="gradient-text">General</span></h2>
+                </div>
+
+                <div class="form-grid glass-panel-tech">
+                    <div class="form-group">
+                        <label for="nombre_completo">1. Nombre completo:</label>
+                        <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Tu nombre completo"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre_empresa">2. Nombre de la empresa o marca:</label>
+                        <input type="text" id="nombre_empresa" name="nombre_empresa"
+                            placeholder="Nombre de tu marca/empresa" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="giro_negocio">3. Giro del negocio / ¿A qué te dedicas?</label>
+                        <textarea id="giro_negocio" name="giro_negocio" rows="3"
+                            placeholder="Describe brevemente a qué se dedica tu negocio"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="servicios">4. ¿Qué servicios ofreces?</label>
+                        <textarea id="servicios" name="servicios" rows="3"
+                            placeholder="Lista tus principales servicios"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="target">5. ¿A qué tipo de clientes va dirigido tu negocio?</label>
+                        <textarea id="target" name="target" rows="3"
+                            placeholder="Describe a tu cliente ideal"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: IDENTIDAD VISUAL -->
+            <section class="form-section">
+                <div class="section-header center">
+                    <h3>SECCIÓN 2</h3>
+                    <h2>Identidad <span class="gradient-text">Visual</span></h2>
+                </div>
+
+                <div class="form-grid glass-panel-tech">
+                    <div class="form-group">
+                        <label>6. ¿Cuentas con logo?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="tiene_logo" value="si"> Sí, ya tengo logo
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="tiene_logo" value="no"> No, aún no tengo logo
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="logo_upload">7. Si tienes logo, súbelo aquí</label>
+                        <input type="file" id="logo_upload" name="logo_upload" accept="image/*">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="colores">8. Colores que te gustan o que ya usas en tu marca</label>
+                        <input type="text" id="colores" name="colores" placeholder="Ej: Azul marino, Dorado, blanco...">
+                    </div>
+
+                    <div class="form-group">
+                        <label>9. ¿Tienes tipografías definidas?</label>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="fonts" value="si"> Sí</label>
+                            <label class="radio-option"><input type="radio" name="fonts" value="no"> No</label>
+                            <label class="radio-option"><input type="radio" name="fonts" value="sugerencias"> No estoy
+                                segura, necesito sugerencias</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>10. ¿Qué estilo prefieres para tu tarjeta?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="elegante">
+                                Elegante</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="minimalista">
+                                Minimalista</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="moderno">
+                                Moderno</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="creativo">
+                                Creativo</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="femenino">
+                                Femenino</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="corporativo">
+                                Corporativo</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="natural"> Natural
+                                / orgánico</label>
+                            <label class="checkbox-option"><input type="checkbox" name="estilo" value="otro">
+                                Otro</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: INFORMACIÓN QUE LLEVARÁ LA TARJETA -->
+            <section class="form-section">
+                <div class="section-header center">
+                    <h3>SECCIÓN 3</h3>
+                    <h2>Contenido de la <span class="gradient-text">Tarjeta</span></h2>
+                </div>
+
+                <div class="form-grid glass-panel-tech">
+                    <div class="form-group">
+                        <label for="nombre_tarjeta">11. Nombre tal como debe aparecer en la tarjeta</label>
+                        <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" placeholder="Ej: Dra. Ana López"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="puesto">12. Puesto o cargo</label>
+                        <input type="text" id="puesto" name="puesto" placeholder="Ej: Gerente General">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">13. Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+52 ...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">14. Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="contacto@empresa.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">15. WhatsApp (si es distinto al teléfono)</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+52 ...">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="redes_sociales">16. Redes sociales que deseas incluir</label>
+                        <textarea id="redes_sociales" name="redes_sociales" rows="2"
+                            placeholder="Facebook, Instagram, LinkedIn... (Usuario o Enlace)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="web">17. Página web (si aplica)</label>
+                        <input type="url" id="web" name="web" placeholder="www.tuempresa.com">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="direccion">18. Dirección física (si deseas incluirla)</label>
+                        <textarea id="direccion" name="direccion" rows="2"
+                            placeholder="Calle, Número, Colonia, Ciudad..."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="slogan">19. ¿Tienes slogan o frase de la marca?</label>
+                        <input type="text" id="slogan" name="slogan" placeholder="Si tienes uno, escríbelo aquí">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: USO DE LA TARJETA -->
+            <section class="form-section">
+                <div class="section-header center">
+                    <h3>SECCIÓN 4</h3>
+                    <h2>Uso y <span class="gradient-text">Formato</span></h2>
+                </div>
+
+                <div class="form-grid glass-panel-tech">
+                    <div class="form-group">
+                        <label>20. ¿Qué tipo de tarjeta necesitas?</label>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="tipo_tarjeta" value="digital">
+                                Digital</label>
+                            <label class="radio-option"><input type="radio" name="tipo_tarjeta" value="impresa">
+                                Impresa</label>
+                            <label class="radio-option"><input type="radio" name="tipo_tarjeta" value="ambas">
+                                Ambas</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cantidad">21. Si será impresa, ¿cuántas aproximadamente?</label>
+                        <input type="text" id="cantidad" name="cantidad" placeholder="Ej: 100, 500, 1000...">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>22. ¿Tienes preferencia en el acabado?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option"><input type="checkbox" name="acabado" value="mate">
+                                Mate</label>
+                            <label class="checkbox-option"><input type="checkbox" name="acabado" value="brillante">
+                                Brillante</label>
+                            <label class="checkbox-option"><input type="checkbox" name="acabado" value="texturizado">
+                                Texturizado</label>
+                            <label class="checkbox-option"><input type="checkbox" name="acabado" value="confio"> No lo
+                                sé / confío en tu recomendación</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>23. Si será digital, ¿cómo la usarás?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option"><input type="checkbox" name="uso_digital" value="whatsapp">
+                                WhatsApp</label>
+                            <label class="checkbox-option"><input type="checkbox" name="uso_digital" value="sociales">
+                                Redes sociales</label>
+                            <label class="checkbox-option"><input type="checkbox" name="uso_digital" value="qr"> Código
+                                QR</label>
+                            <label class="checkbox-option"><input type="checkbox" name="uso_digital" value="airdrop">
+                                AirDrop</label>
+                            <label class="checkbox-option"><input type="checkbox" name="uso_digital" value="otro">
+                                Otro</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: INSPIRACIÓN -->
+            <section class="form-section">
+                <div class="section-header center">
+                    <h3>SECCIÓN 5</h3>
+                    <h2>Inspiración & <span class="gradient-text">Referencias</span></h2>
+                </div>
+
+                <div class="form-grid glass-panel-tech">
+                    <div class="form-group full-width">
+                        <label for="referencias_file">24. ¿Tienes referencias de tarjetas o diseños que te
+                            gusten?</label>
+                        <input type="file" id="referencias_file" name="referencias_file" multiple accept="image/*,.pdf">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="links_referencia">25. Links de referencia (Pinterest, Instagram, etc.)</label>
+                        <textarea id="links_referencia" name="links_referencia" rows="3"
+                            placeholder="Pega aquí los enlaces..."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="no_gustar">26. ¿Hay algo que definitivamente NO te gustaría?</label>
+                        <textarea id="no_gustar" name="no_gustar" rows="3"
+                            placeholder="Ej: No usar color rojo, no usar fotos reales..."></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 6: DETALLES FINALES -->
+            <section class="form-section">
+                <div class="section-header center">
+                    <h3>SECCIÓN 6</h3>
+                    <h2>Detalles <span class="gradient-text">Finales</span></h2>
+                </div>
+
+                <div class="form-grid glass-panel-tech">
+                    <div class="form-group">
+                        <label for="fecha_entrega">27. Fecha ideal de entrega</label>
+                        <input type="date" id="fecha_entrega" name="fecha_entrega">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="comentarios_extra">28. ¿Hay algo más que consideres importante para el
+                            diseño?</label>
+                        <textarea id="comentarios_extra" name="comentarios_extra" rows="4"
+                            placeholder="Cualquier otro detalle..."></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-actions center">
+                <button type="submit" class="primary-btn glow-effect large-btn">Enviar Brief</button>
+            </div>
+
+        </form>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 María Yepez Design</p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
